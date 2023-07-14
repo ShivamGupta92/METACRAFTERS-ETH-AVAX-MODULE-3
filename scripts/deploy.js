@@ -7,12 +7,12 @@
 const { ethers } = require("hardhat");
 
 async function main() {
-  const MyToken = await ethers.getContractFactory("Lock");
-  const myToken = await Lock.deploy();
+  const MyToken = await ethers.getContractFactory("ShivamRainCoin");
+  const myToken = await ShivamRainCoin.deploy();
 
   await myToken.waitForDeployment();
 
-  console.log("MyToken deployed to:", Lock.target);
+  console.log("MyToken deployed to:", ShivamRainCoin.target);
 }
 
 main()
